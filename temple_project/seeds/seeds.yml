@@ -1,0 +1,28 @@
+version: 2
+
+seeds:
+  - name: order_nps
+    config:
+      schema: temple_project
+      column_types:
+        order_id: BIGINT
+        state: VARCHAR
+        customer_type: VARCHAR
+        order_sku_count: BIGINT
+        order_date: DATE
+        nps_sent_date: DATE
+        nps_scored_date: DATE
+        nps_score: BIGINT
+        nps: VARCHAR
+        order_total_value: FLOAT
+
+  - name: order_product
+    config:
+      schema: temple_project
+      column_types:
+        order_id: BIGINT
+        order_product_id: BIGINT
+        sku: VARCHAR
+        product_category: VARCHAR
+        supplier: VARCHAR
+        ship_carrier: VARCHAR

@@ -1,3 +1,4 @@
 temple/
 venv/
 logs/
+dev.duckdb
