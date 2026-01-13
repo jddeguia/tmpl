@@ -1,3 +1,7 @@
+{{ config(
+    materialized = 'table'
+) }}
+
 WITH source AS (
     SELECT
         order_id,
