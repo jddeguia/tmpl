@@ -14,6 +14,8 @@ WITH exploded_products AS (
 )
 
 SELECT
+    order_date,
+    state,
     product_category,
     COUNT(*) AS total_orders,
     COUNT(CASE WHEN nps = 'Detractor' THEN 1 END) AS detractors,
